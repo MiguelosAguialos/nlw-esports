@@ -68,7 +68,7 @@ export function CreateAdModal() {
                 className="bg-zinc-900 py-3 px-4 rounded text-sm placeholder:text-zinc-500 appearance-none"
                 defaultValue=""
               >
-                <option disabled value="">Selecione o game que deseja jogar</option>
+                <option disabled value="">Selecione o jogo que deseja jogar</option>
 
                 {games.map(game => {
                   return <option key={game.id} value={game.id}>{game.title}</option>
@@ -77,14 +77,14 @@ export function CreateAdModal() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="name">Seu nome (ou nickname)</label>
-              <Input name="name" id="name" placeholder="Como te chamam dentro do game?" />
+              <label htmlFor="name">Seu nickname</label>
+              <Input name="name" id="name" placeholder="Qual seu nick para jogos?" />
             </div>
 
             <div className="grid grid-cols-2 gap-6">
               <div className="flex flex-col gap-2">
                 <label htmlFor="yearsPlaying">Joga a quantos anos?</label>
-                <Input name="yearsPlaying" id="yearsPlaying" type="number" placeholder="Tudo bem ser ZERO" />
+                <Input name="yearsPlaying" id="yearsPlaying" type="number" placeholder="A prática leva a perfeição" />
               </div>
               <div className="flex flex-col gap-2">
                 <label htmlFor="discord">Qual o seu Discord?</label>
@@ -154,7 +154,7 @@ export function CreateAdModal() {
                 </ToggleGroup.Root>
               </div>
               <div className="flex flex-col gap-2 flex-1">
-                <label htmlFor="hourStart">Qual horário do dia?</label>
+                <label htmlFor="hourStart">Qual o horário do dia?</label>
                 <div className="grid grid-cols-2 gap-2">
                   <Input name="hourStart" id="hourStart" type="time" placeholder="De" />
                   <Input name="hourEnd" id="hourEnd" type="time" placeholder="Até" />
